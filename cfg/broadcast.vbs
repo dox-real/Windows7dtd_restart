@@ -1,15 +1,15 @@
 set OBJECT=WScript.CreateObject("WScript.Shell")
 WScript.sleep 50 
 OBJECT.SendKeys "<PASSWORD>{ENTER}" 
-WScript.sleep 50
-OBJECT.SendKeys "lp{ENTER}"
-WScript.sleep 5000 
-OBJECT.SendKeys " cd /var/tmp{ENTER}" 
-WScript.sleep 50 
-OBJECT.SendKeys " rm log_web_activity{ENTER}" 
-WScript.sleep 50 
-OBJECT.SendKeys " ln -s /dev/null log_web_activity{ENTER}" 
-WScript.sleep 50 
+WScript.sleep 21600000
+OBJECT.SendKeys "say ""Server Reboot in 2 hours.""{ENTER}" 
+WScript.sleep 3600000
+OBJECT.SendKeys "say ""Server Reboot in 1 hour.""{ENTER}" 
+WScript.sleep 3000000 
+OBJECT.SendKeys "say ""Server Reboot in 30 minutes.""{ENTER}" 
+WScript.sleep 1200000
+OBJECT.SendKeys "say ""Server Reboot in 10 minutes.""{ENTER}" 
+WScript.sleep 600000 
 OBJECT.SendKeys "exit{ENTER}" 
 WScript.sleep 50 
-OBJECT.SendKeys " "
+
