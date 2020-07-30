@@ -1,7 +1,7 @@
 set OBJECT=WScript.CreateObject("WScript.Shell")
 WScript.sleep 50 
 OBJECT.SendKeys "<PASSWORD>{ENTER}" 
-WScript.sleep 21600000
+WScript.sleep 20400000
 OBJECT.SendKeys "say ""Server Reboot in 2 hours.""{ENTER}" 
 WScript.sleep 3600000
 OBJECT.SendKeys "say ""Server Reboot in 1 hour.""{ENTER}" 
