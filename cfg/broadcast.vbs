@@ -1,4 +1,5 @@
 set OBJECT=WScript.CreateObject("WScript.Shell")
+Set OBJECT = Nothing
 WScript.sleep 50 
 OBJECT.SendKeys "<PASSWORD>{ENTER}" 
 WScript.sleep 20400000
